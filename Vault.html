@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Vault Breach</title>
+<script src=""></script>
+</head>
+<body class="bg-slate-900 flex items-center justify-center h-screen text-white">
+
+<div id="vault" class="p-8 border-2 border-cyan-500 rounded-xl bg-slate-800 text-center w-80">
+<h1 class="text-2xl font-bold mb-4 text-cyan-400">VAULT BREACH</h1>
+<input type="number" id="son" placeholder="Son's Age" class="w-full p-2 mb-2 text-black rounded">
+<input type="number" id="father" placeholder="Father's Age" class="w-full p-2 mb-4 text-black rounded">
+<button onclick="check()" class="bg-cyan-500 w-full p-2 font-bold text-black rounded">BREACH VAULT</button>
+<p id="result" class="mt-4 font-bold"></p>
+</div>
+
+<script>
+function check() {
+let s = document.getElementById("son").value;
+let f = document.getElementById("father").value;
+let v = document.getElementById("vault");
+let r = document.getElementById("result");
+
+if(s == "12" && f == "36") {
+v.style.backgroundColor = "green";
+r.innerText = "ACCESS GRANTED!";
+} else {
+v.style.backgroundColor = "red";
+r.innerText = "ACCESS DENIED!";
+}
+}
+</script>
+
+</body>
+</html>
